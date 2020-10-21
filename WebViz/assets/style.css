@@ -1,0 +1,87 @@
+.h1{
+    font-size: 60px;
+    color: teal;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left:15px; 
+    margin-right:15px;
+}
+
+.h2{
+    font-size: 50px;
+    color: teal;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left:15px; 
+    margin-right:15px;
+}
+
+.h3{
+    font-size: 25px;
+    color: teal;
+    text-align: center;
+    font-weight: bold;
+}
+
+.img-home{
+    float: left;
+    max-width: 250px;
+}
+
+body{
+    background: lightgray;
+}
+
+/* .container{
+    background-color: white;
+    margin: 5%;
+    padding: 5%
+} */
+/* .box {
+    min-height: 30px;
+    padding: 7px;
+    margin-top: 5px;
+    width: 200 px;
+} */
+
+.text-box{
+    background-color: white;
+    max-width: 500 px;
+}
+
+.navbar-brand{
+    background-color: teal;
+    border-color: teal;
+    border-style: solid;
+    border-left: teal;
+    border-right: teal;
+    border-top: teal;
+    border-bottom: teal;
+    border-width: 5px;
+    width: 100px;
+    color: white;
+    text-align: center;
+}
+
+.thumbnail{
+    /* border: 1px solid #ddd; */
+    /* border-radius: 4px;
+    padding: 15px; */
+    width: 100%;
+
+}
+
+.text{
+    line-height: 2;
+}
+
+.content{
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

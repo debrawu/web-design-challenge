@@ -11,47 +11,45 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
+    
 
 </head>
 
 <body>
+    <div class = 'navigation'>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/assets/homepage.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="/assets/comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/assets/data.html">Data</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/assets" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/assets/MaxTemp.html">Max Temp</a>
+                        <a class="dropdown-item" href="/assets/Windspeed.html">Windspeed</a>
+                        <a class="dropdown-item" href="/assets/Humidity.html">Humidity/a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/assets/Windspeed.html">Windspeed</a>
+                    </div>
+                
+              </ul>
+            </div>
+        </div>
+
+
+    </nav>
     <!-- Creates the Overall Grid -->
     <!-- <div class='container_things'>
         <div class='row'>
@@ -158,22 +156,49 @@
         <!-- create text-->
         <div class='row'>
             <!-- left side latitude -->
-            <div class ='col col-12 col-md-8'>
+            <div class ='col-md-12 col-lg-8 col-xl-8'>
                 <div class='row'>
                     <div class ='col-md-12'>
-                        <h1 class='h1'>Summary: Latitude vs X</h1>
-                        <hr>
-                        <img class='img' src='viz/CityLatvsMaxTemp.png' alt='CityLatvsMaxTemp'>
-                        <p>In this practice, we gathered data to prove how the weather had changed as we approach the equator, from both North and South Poles. The data was 500 randomly selected latitude and longitude numbers, which we then used a citipy Python library to find the nearest cities to those randomly generated numbers. With these random numbers, we used a Weather API to generate temperatures, humidity, cloudiness, and windspeed from those locations.</p>
-                        <p>With this data, we were able showcase the relationship between latitude and temperature, humidity, cloudiness, and wind speed. To go into more details, we could also generate the difference between Northern and Southern Hemisphere and its effect with temperature, humidity, cloudiness, and wind speed in the form of scatterplots. All data has been exported to a CSV file and all scatterplots have been exported to images as well.</p> 
-                    </div> 
-                </div>
+                        <div class='box bg-white'>
+                            <h1 class='h1'>Summary: Latitude vs X</h1>
+                            <hr>
+                            <img class='img-home' src='viz/CityLatvsMaxTemp.png' alt='CityLatvsMaxTemp'>
+                            <p>In this practice, we gathered data to prove how the weather had changed as we approach the equator, from both North and South Poles. The data was 500 randomly selected latitude and longitude numbers, which we then used a citipy Python library to find the nearest cities to those randomly generated numbers. With these random numbers, we used a Weather API to generate temperatures, humidity, cloudiness, and windspeed from those locations.</p>
+                            <p>With this data, we were able showcase the relationship between latitude and temperature, humidity, cloudiness, and wind speed. To go into more details, we could also generate the difference between Northern and Southern Hemisphere and its effect with temperature, humidity, cloudiness, and wind speed in the form of scatterplots. All data has been exported to a CSV file and all scatterplots have been exported to images as well.</p> 
+                                        
+                        </div> 
+                    </div>
+                 </div>
             </div>
+    
+            <div class='row'>
+                <div class ='col-md-12 col-lg-4 col-xl-4'>
+                        <div class = 'box bg-white'>
+                             <h2 class='h2'>Visualizations<hr></h2>
+                      
+                            <div class= "col-md-6 col-lg-6 col-xl-6">
+                                <a href=#><img src='/viz/CityLatvsMaxTemp.png' alt ='CityLatvsMaxTemp'> </a>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                <a href=#><img src='viz/CityLatvsCloudiness.png'alt='CityLatvsCloudiness'> </a>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                <a href=#><img src='viz/CityLatvsHumidity.png'alt='CityLatvsHumidity'> </a>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                <a href=#><img src='viz/CityLatvsWindSpeed.png' alt='CityLatvsWindSpeed'> </a>
+
+                        </div>
+                </div>
+
+            </div>
+
+        
         </div>
     </div>
     <!-- right side visualizations  -->
-    <div class='container'>
-        <div class='row'>
+    <!-- <div class='container'> -->
+        <!-- <div class='row'>
             <div class ='col col-12 col-md-4'>
                 <h2 class='h2'>Visualizations</h2>
                 <hr>                
@@ -188,14 +213,14 @@
                         <a href=#><img src='viz/CityLatvsHumidity.png'alt='CityLatvsHumidity'> </a>
                     </div>
                     <div class='col col-3 col-md-6'>
-                        <a href=#><img src='viz/CityLatvsWindSpeed.png' alt='CityLatvsWindSpeed' </a>
+                        <a href=#><img src='viz/CityLatvsWindSpeed.png' alt='CityLatvsWindSpeed'> </a>
 
                     </div>
                 </div>
 
             </div>
 
-        </div>
+        </div> -->
 
         </div>
 
