@@ -25,15 +25,15 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText"></div>            
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">          
           <span class="navbar-text">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav ml-auto">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
-                      <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Latitude vs. Max Temperature</a>
-                      <a class="dropdown-item" href="#">Latitude vs. Cloudiness</a>
-                      <a class="dropdown-item" href="#">Latitude vs. Humidity</a>
-                      <a class="dropdown-item" href="#">Latitude vs. Wind Speed</a>
+                      <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="MaxTemp.html">Latitude vs. Max Temperature</a>
+                      <a class="dropdown-item" href="Cloudiness.html">Latitude vs. Cloudiness</a>
+                      <a class="dropdown-item" href="Humidity.html">Latitude vs. Humidity</a>
+                      <a class="dropdown-item" href="Windspeed.html">Latitude vs. Wind Speed</a>
                       </div>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Comparison</a>
@@ -56,7 +56,7 @@
         <div class='col-lg-8 col-md-12'>
           <section class='text-box'>
             <section class='content'>
-            <h1>Summary: Latitude vs. X</h1>
+            <h1 class='h1'>Summary: Latitude vs. X</h1>
             <hr>
             <!-- add the image of lat vs max temp -->
             <img src='CityLatvsMaxTemp.png' class='img-home' alt='CityLatvsMaxTemp'>
@@ -71,7 +71,7 @@
         <div class='col-lg-4 col md-12'>
           <section class='text-box'>
             <section class='content'>
-            <h2> Visualizations </h2>
+            <h2 class ='h2'> Visualizations </h2>
             <hr>
             
             <!-- create another container to hold all of the visualizations-->
