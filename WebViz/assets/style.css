@@ -112,3 +112,8 @@ figure{
     padding-right: 5px;
     padding-left: 5px;
 }
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-image: none !important;
+    background-color: lightslategray !important;
+}
