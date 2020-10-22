@@ -92,10 +92,19 @@ body{
     color: white;
 }
 
-@media (max-width: 600px) {
-    .navbar-expand-lg .navbar-light .bg-light {
+@media only screen and (max-width: 600px) {
+    .navbar-custom{
+        background-color: teal !important;
+    }
+    /* .navbar-expand-lg .navbar-light .bg-light {
     background-color:teal;
+    background-image: none !important; */
+    /*.navbar {
+        background-color: white;*/
   }
+    /* .navbar {
+        background-color:white
+    } */
 }
 figure{
     display: table;
